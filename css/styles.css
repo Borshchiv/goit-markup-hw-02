@@ -1,0 +1,226 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --text-white: #FFFFFF;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F4266;
+    --hero-background: #2E2F42B2;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background: var(--white-background);
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    color: var(--dark);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo-light {
+    color: var(--text-white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo > span,
+.logo-light > span {
+    color: var(--primary-brand);
+}
+
+.logo:active,
+.logo:focus,
+.logo:hover,
+.logo-light:active,
+.logo-light:focus,
+.logo-light:hover {
+    color: var(--primary-brand);
+}
+
+.header {
+    background: var(--white-background);
+    height: 72px;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--pressed-state);
+}
+
+.contact-link {
+    color: var(--dark);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-link:active,
+.contact-link:focus,
+.contact-link:hover {
+    color: var(--pressed-state);
+}
+
+.section-hero {
+    height: 600px;
+    background: var(--dark);
+}
+
+.title-hero {
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.button-hero {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 32px;
+    gap: 10px;
+    background: var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-hero:active,
+.button-hero:focus,
+.button-hero:hover {
+    background: var(--pressed-state);
+}
+
+.button-primary {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    background: var(--primary-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-primary:active,
+.button-primary:focus,
+.button-primary:hover {
+    background: var(--pressed-state);
+}
+
+.button-secondary {
+    color: var(--primary-brand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    background: var(--white-background);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-secondary:active,
+.button-secondary:focus,
+.button-secondary:hover {
+    color: var(--pressed-state);
+    border: 1px solid var(--pressed-state);
+}
+
+.title-section {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.title-hidden {
+    display: none;
+}
+
+.team-member-name {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.team-member-role {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.project-description {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    background: var(--dark);
+    height: 312px;
+}
+
+.text-footer {
+    color: var(--light);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
