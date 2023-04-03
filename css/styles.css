@@ -34,11 +34,11 @@ body {
     text-decoration: none;
 }
 
-.logo > span {
+.logo > .logo-color {
     color: var(--dark);
 }
 
-.logo-light > span {
+.logo-light > .logo-color {
     color: var(--text-white);
 }
 
@@ -51,7 +51,7 @@ body {
     list-style: none;
 }
 
-.nav-links > li > a {
+.nav-link {
     color: var(--dark);
     font-weight: 500;
     font-size: 16px;
@@ -60,9 +60,9 @@ body {
     text-decoration: none;
 }
 
-.nav-links > li > a:active,
-.nav-links > li > a:focus,
-.nav-links > li > a:hover {
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
     color: var(--pressed-state);
 }
 
@@ -70,7 +70,7 @@ body {
     list-style: none;
 }
 
-.contact-links > li > a {
+.contact-link {
     color: var(--dark);
     font-style: normal;
     font-size: 16px;
@@ -79,9 +79,9 @@ body {
     text-decoration: none;
 }
 
-.contact-links > li > a:active,
-.contact-links > li > a:focus,
-.contact-links > li > a:hover {
+.contact-link:active,
+.contact-link:focus,
+.contact-link:hover {
     color: var(--pressed-state);
 }
 
@@ -121,7 +121,7 @@ body {
     background: var(--pressed-state);
 }
 
-.button-primary {
+.button {
     color: var(--text-white);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -137,30 +137,21 @@ body {
     cursor: pointer;
 }
 
-.button-primary:active,
-.button-primary:focus,
-.button-primary:hover {
+.button:active,
+.button:focus,
+.button:hover {
     background: var(--pressed-state);
 }
 
-.button-secondary {
+.button.secondary {
     color: var(--primary-brand);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    padding: 12px 24px;
-    background: var(--white-background);
+    background-color: var(--white-background);
     border: 1px solid var(--accent);
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-.button-secondary:active,
-.button-secondary:focus,
-.button-secondary:hover {
+.button.secondary:active,
+.button.secondary:focus,
+.button.secondary:hover {
     color: var(--pressed-state);
     border: 1px solid var(--pressed-state);
 }
@@ -179,11 +170,7 @@ body {
     display: none;
 }
 
-.section-list {
-    list-style: none;
-}
-
-.items-list {
+.list {
     list-style: none;
 }
 
@@ -197,7 +184,7 @@ body {
 
 .skill-description {
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -225,6 +212,16 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-link:active,
+.project-link:focus,
+.project-link:hover {
+    color: var(--pressed-state);
 }
 
 .project-description {
