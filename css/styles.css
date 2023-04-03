@@ -22,19 +22,9 @@ body {
     margin: 0;
 }
 
-.logo {
-    color: var(--dark);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
+.logo,
 .logo-light {
-    color: var(--text-white);
+    color: var(--primary-brand);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -44,18 +34,12 @@ body {
     text-decoration: none;
 }
 
-.logo > span,
-.logo-light > span {
-    color: var(--primary-brand);
+.logo > span {
+    color: var(--dark);
 }
 
-.logo:active,
-.logo:focus,
-.logo:hover,
-.logo-light:active,
-.logo-light:focus,
-.logo-light:hover {
-    color: var(--primary-brand);
+.logo-light > span {
+    color: var(--text-white);
 }
 
 .header {
@@ -63,7 +47,11 @@ body {
     height: 72px;
 }
 
-.nav-link {
+.nav-links {
+    list-style: none;
+}
+
+.nav-links > li > a {
     color: var(--dark);
     font-weight: 500;
     font-size: 16px;
@@ -72,13 +60,17 @@ body {
     text-decoration: none;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
+.nav-links > li > a:active,
+.nav-links > li > a:focus,
+.nav-links > li > a:hover {
     color: var(--pressed-state);
 }
 
-.contact-link {
+.contact-links {
+    list-style: none;
+}
+
+.contact-links > li > a {
     color: var(--dark);
     font-style: normal;
     font-size: 16px;
@@ -87,9 +79,9 @@ body {
     text-decoration: none;
 }
 
-.contact-link:active,
-.contact-link:focus,
-.contact-link:hover {
+.contact-links > li > a:active,
+.contact-links > li > a:focus,
+.contact-links > li > a:hover {
     color: var(--pressed-state);
 }
 
@@ -109,9 +101,11 @@ body {
 
 .button-hero {
     color: var(--text-white);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding: 16px 32px;
     gap: 10px;
     background: var(--primary-brand);
@@ -129,6 +123,7 @@ body {
 
 .button-primary {
     color: var(--text-white);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -150,6 +145,7 @@ body {
 
 .button-secondary {
     color: var(--primary-brand);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -174,13 +170,45 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
+    text-align: center;
     text-transform: capitalize;
 }
 
 .title-hidden {
     display: none;
+}
+
+.section-list {
+    list-style: none;
+}
+
+.items-list {
+    list-style: none;
+}
+
+.skill-title {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.skill-description {
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+}
+
+.section-team {
+    background: var(--light);
+}
+
+.team-card {
+    background: var(--white-background);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-name {
