@@ -39,16 +39,12 @@ body {
 }
 
 .logo-light > .logo-color {
-    color: var(--text-white);
+    color: var(--light);
 }
 
 .header {
     background: var(--white-background);
     height: 72px;
-}
-
-.nav-links {
-    list-style: none;
 }
 
 .nav-link {
@@ -233,6 +229,7 @@ body {
 }
 
 .project-type {
+    color: var(--text);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
